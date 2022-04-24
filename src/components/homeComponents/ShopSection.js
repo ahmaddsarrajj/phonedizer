@@ -26,9 +26,7 @@ const ShopSection = (props) => {
                   <div className="mb-5">
                     <Loading />
                   </div>
-                ) : error ? (
-                  <Message variant="alert-danger">{error}</Message>
-                ) : (
+                ) : error ?  (
                   <>
                     {products.map((product) => (
                       <div
@@ -59,7 +57,10 @@ const ShopSection = (props) => {
                       </div>
                     ))}
                   </>
-                )}
+                )
+                : (
+                  <Message variant="alert-danger">{error}</Message>
+                ) }
 
                 {/* Pagination */}
                 {/* <Pagination
