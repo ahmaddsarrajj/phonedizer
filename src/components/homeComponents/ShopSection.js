@@ -26,8 +26,6 @@ const ShopSection = (props) => {
                   <div className="mb-5">
                     <Loading />
                   </div>
-                ) : error ? (
-                  <Message variant="alert-danger">{error}</Message>
                 ) : (
                   <>
                     {products?.map((product) => (
