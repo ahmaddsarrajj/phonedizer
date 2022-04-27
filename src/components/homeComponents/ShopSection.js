@@ -43,6 +43,9 @@ const ShopSection = (props) => {
                           </Link>
 
                           <div className="shoptext">
+                             <div className="using">
+                              {product.use}
+                            </div>
                             <p>
                               <Link to={`/products/${product._id}`}>
                                 {product.name}
