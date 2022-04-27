@@ -675,5 +675,7 @@ textarea:focus {
 }
 .using{
   background-color: #074A5D;
-  color: white
+  color: white,
+  text-align: center,
+  margin-buttom: 5px
 }
